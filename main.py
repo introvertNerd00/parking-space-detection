@@ -18,7 +18,6 @@ def checkParkingSpace(imgPro):
 
     for pos in posList:
         x, y = pos
-
         imgCrop = imgPro[y:y + height, x:x + width]
         # cv2.imshow(str(x * y), imgCrop)
         count = cv2.countNonZero(imgCrop)
